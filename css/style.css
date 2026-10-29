@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: currentColor;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --font-family: "Pathway Extreme", sans-serif;
+
+  --font-size-sm: clamp(0.8rem, -0.09vi + 0.82rem, 0.75rem);
+  --font-size-md: clamp(1rem, 0.23vi + 0.94rem, 1.13rem);
+  --font-size-lg: clamp(1.25rem, 0.8vi + 1.05rem, 1.69rem);
+  --font-size-xl: clamp(1.56rem, 1.76vi + 1.12rem, 2.53rem);
+  --font-size-2xl: clamp(1.95rem, 3.35vi + 1.12rem, 3.8rem);
+  --font-size-3xl: clamp(2.44rem, 5.92vi + 0.96rem, 5.7rem);
+  --font-size-4xl: clamp(3.05rem, 9.98vi + 0.56rem, 8.54rem);
+
+  --font-size-vis-md: 16px;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --line-height-title: 0.85;
+  --line-height-body: 1.2;
+
+  --color-background: #edf1fa;
+  --color-text: #122034;
+  --color-muted: #2c4569;
+  --color-asia: #ecaf2e;
+  --color-america: #13a9dd;
+  --color-europe: #0c6ca5;
+  --color-increase: #3f7632;
+  --color-decrease: #d52138;
+  --color-ghost: #d1dcf3;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-body);
+  font-size: var(--font-size-md);
+  font-variation-settings: "wdth" 87.5;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1 {
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height-title);
+  font-size: var(--font-size-3xl);
+  font-variation-settings: "wdth" 75;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+main {
+  margin-block: 4rem;
+}
+
+article {
+  width: min(100% - 2rem, 72rem);
+  margin-inline: auto;
+  display: grid;
+  gap: 2rem;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem 5rem;
+}
+
+footer {
+  display: grid;
+  gap: 0.5rem;
+  color: var(--color-muted);
+}
+
+.swatch {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.swatches {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  margin-inline-start: auto;
+}
+
+.swatch__swatch {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.swatch__swatch:empty {
+  background-color: currentColor;
+}
+
+.chart {
+  font-size: var(--font-size-vis-md);
+  font-variation-settings: "wdth" 75;
+  font-variant-numeric: tabular-nums;
+}
+
+.chart text {
+  fill: currentColor;
+}
+
+.chart .time {
+  font-weight: var(--font-weight-bold);
+}
+
+.chart .link {
+  fill: none;
+  mix-blend-mode: multiply;
+}
+
+.chart .name__label {
+  font-weight: var(--font-weight-bold);
+}
+
+.chart .change__label {
+  color: var(--color-background);
+  font-weight: var(--font-weight-bold);
+}

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Vehicle-Producing Countries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:opsz,wdth,wght@8..144,75..100,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <div class="intro">
+          <h1>
+            Top <br />
+            Vehicle- <br />
+            Producing <br />
+            Countries
+          </h1>
+          <div class="swatches">
+            <div class="swatch">
+              <span
+                class="swatch__swatch"
+                style="color: var(--color-asia)"
+              ></span>
+              <span class="swatch__label">ASIA</span>
+            </div>
+            <div class="swatch">
+              <span
+                class="swatch__swatch"
+                style="color: var(--color-america)"
+              ></span>
+              <span class="swatch__label">AMERICA</span>
+            </div>
+            <div class="swatch">
+              <span
+                class="swatch__swatch"
+                style="color: var(--color-europe)"
+              ></span>
+              <span class="swatch__label">EUROPE</span>
+            </div>
+            <div class="swatch">
+              <span class="swatch__swatch" style="color: var(--color-muted)">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                  <use href="#car"></use>
+                </svg>
+              </span>
+              <span class="swatch__label">1M VEHICLES PRODUCED</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="chart"></div>
+
+        <footer>
+          <p
+            >This is a remake of
+            <a
+              href="https://www.visualcapitalist.com/ranked-the-worlds-top-vehicle-producers/"
+              target="_blank"
+              >Ranked: The World’s Largest Vehicle Producers</a
+            ></p
+          >
+          <p
+            >Data source: International Organization of Motor Vehicle
+            Manufacturers
+            <a
+              href="https://oica.net/wp-content/uploads/2025/11/prod-total-2025.pdf"
+              target="_blank"
+              >OICA Correspondents Survey</a
+            ></p
+          >
+        </footer>
+      </article>
+    </main>
+    <svg style="width: 0; height: 0; position: absolute">
+      <symbol
+        id="car"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        preserveAspectRatio="xMinYMid slice"
+      >
+        <!-- Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE -->
+        <path
+          fill="currentColor"
+          d="M6.5 20q-1.025 0-1.875-.537T3.35 18H0v-6q0-.825.588-1.412T2 10h1l1.5-4.175q.225-.6.738-.962T6.4 4.5h7.45q.525 0 .988.263t.737.712L18 9.5l4.175.35q.825.075 1.325.625t.5 1.375V18h-3.35q-.425.925-1.275 1.463T17.5 20t-1.875-.537T14.35 18h-4.7q-.425.925-1.275 1.463T6.5 20"
+        />
+      </symbol>
+    </svg>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
